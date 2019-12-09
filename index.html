@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="Simplified Bootstrap template with sticky menu">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-menu.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/sticky-menu.js"></script>
+    
+    <!-- Get Status Data from Python Script -->
+    <script src="js/getdata.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="loadstatus()">
+    <div class="bgimg">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="images/cisco.png" height="50" style="float:left;" /><span class="navbar-title">Frankfurt E-Parking</span>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#page-top">Live Status</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#second-section">History</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#third-section">Technical Infos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#fourth-section">Contact</a>
+                    </li>
+                </ul>
+            </div>	<!-- .navbar-collapse -->
+        </div>		<!-- .container -->
+    </nav>
+    <!-- First  -->
+    <section id="first-section" class="first-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+				   <h1 style="margin:70px; padding:10px; color:#FFF; background-color:#1F4E6F;">Current E-Parking Status in the Cisco Eschborn-Office</h1>
+                </div>
+            </div>
+            <div class="row" style="background-color:#FFF;">
+                <div id="park1" class="parking col-md-3"></div>
+                <div id="park2" class="parking col-md-3"></div>
+                <div id="park3" class="parking col-md-3"></div>
+                <div id="park4" class="parking col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: right;">
+				   <span id="lastupdate" style="color:#CCC; font-size:smaller;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second -->
+    <section id="second-section" class="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>History</h1>
+                    Historic Data (soon to be available)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third -->
+    <section id="third-section" class="third-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Technical Infos</h1>
+                    <img src="images/architecture.jpg" width="100%" />
+                    <h3>Add fkf3parkingbot[at]webex.bot in Webex Teams!</h3>
+                    <img src="images/bot.png" width="50%" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Fourth -->
+    <section id="fourth-section" class="fourth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>About</h1>
+                    <p style="font-size: 15px;">This is a real showcase of a Cisco IoT solution: Getting sensor data via LoRaWAN to display its information on a website and via a Webex Teams bot. It is currently in use in the Cisco office in Frankfurt to check if owners of electric vehicles have an available e-parking spot in order to charge their car.</p>
+                    <p>Contact: Florian Pachinger (flpachin), Michael Eder (miceder)</p>
+                    <p>&nbsp;</p>
+                    <p style="font-weight: bold">Changelog</p>
+                    <p>December 2019: Added webex cards, 1.0 release</p>
+                    <p>November 2019: Extended Website sections, created bot, setted up cloud hosting</p>
+                    <p>October 2019: Installed sensors, gateway. Created website</p>
+                    <p>&nbsp;</p>
+                    <p style="font-weight: bold">More Information</p>
+                    <p><a href="https://developer.cisco.com/" target="_blank">Cisco DevNet Website</a></p>
+                    <p><a href="https://www.cisco.com/c/en/us/products/collateral/se/internet-of-things/datasheet-c78-737307.html" target="_blank">Cisco LoRaWAN IXM Gateway Datasheet</a></p>
+                    <p><a href="https://developer.webex.com/" target="_blank">Webex for Developers</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+</body>
+
+</html>
