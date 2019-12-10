@@ -104,6 +104,7 @@ html {
     padding:20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     border:5px solid #FFF;
     min-height: 180px;
     text-align: center;
