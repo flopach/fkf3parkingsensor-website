@@ -40,7 +40,7 @@ function loadstatus() {
             $("#park4").css({"backgroundColor": "#D1392C"});
         }
         
-        $('#lastupdate').html("Last Update:"+new Date($.now())); 
+        $('#lastupdate').html("Last Update (UTC): "+json.lastupdate); 
         
         
     });
