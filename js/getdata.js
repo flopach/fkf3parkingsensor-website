@@ -5,7 +5,7 @@ function loadstatus() {
         var json = JSON.parse(data);
         
         if (json.park1 == 0) {
-            $('#park1').html('P1 is available!'); 
+            $('#park1').html('P1 (11kW) is available!'); 
             $("#park1").css({"backgroundColor": "#81BC5A"});
         }
         else {
@@ -14,7 +14,7 @@ function loadstatus() {
         }
         
         if (json.park2 == 0) {
-            $('#park2').html('P2 is available!'); 
+            $('#park2').html('P2 (3,7kW) is available!'); 
             $("#park2").css({"backgroundColor": "#81BC5A"});
         }
         else {
@@ -23,7 +23,7 @@ function loadstatus() {
         }
         
         if (json.park3 == 0) {
-            $('#park3').html('P3 is available!'); 
+            $('#park3').html('P3 (3,7kW) is available!'); 
             $("#park3").css({"backgroundColor": "#81BC5A"});
         }
         else {
@@ -32,7 +32,7 @@ function loadstatus() {
         }
         
         if (json.park4 == 0) {
-            $('#park4').html('P4 is available!'); 
+            $('#park4').html('P4 (3,7kW) is available!'); 
             $("#park4").css({"backgroundColor": "#81BC5A"});
         }
         else {
@@ -40,7 +40,7 @@ function loadstatus() {
             $("#park4").css({"backgroundColor": "#D1392C"});
         }
         
-        $('#lastupdate').html("Last Update (UTC): "+json.lastupdate); 
+        $('#lastupdate').html("Last Update (UTC+1): "+json.lastupdate); 
         
         
     });
